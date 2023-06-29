@@ -1,0 +1,106 @@
+Tratamento de Dados JS
+//Number.ParseInt = Transformar uma String num número inteiro
+//Number.ParseFloat = Transformar uma String num número real
+//Number = O javascript identifica o tipo e transforma para você
+//String(var) = Transforma um número para string
+//var.toString() = Transforma um número para string também
+//var.lenght - quantos caracteres a string possui
+//var.toUpperCase() - Jogar tudo para letras maiúsculas
+//var.toLowerCase() - Jogar tudo para minusculas
+
+
+
+//`O alunoo ${variavel} com ${variavel}` - Dessa forma criamos um templateString
+------------------------------------------------------------------------------------------
+
+Tratamento de números
+
+var.toFixed('número de casas') = escolher quantas casas decimais vc deseja naquele numero
+
+var.toFixed(número de casas).replace('.' + ',') = trocar o Ponto por Vírgula
+
+var.toLocaleString('pt-BR' , {style: 'currency', currency: 'BRL'}) = mostrar o R$ antes do número, alterando o currency vc altera a moeda.
+
+
+------------------------------------------------------------------------------------------
+OPERADORES javascript
+
+Aritméticos
+'+' - Usado para somar valores
+'-' - Usado para diminuir valores
+'*' - Usado para multiplicar valores
+'/' - Usado para dividir valores
+'%' - Usado para calcular o resto da divisão inteira
+'**' - Usado para calcular a potência 
+
+Atribuição
+'++n' - é usada para incrementar um número a variavel, por exemplo se a variavél 'n' estiver valendo 5 e for utilizado esse comando ela passara a valer 6.
+'--n'
+'+=' - Serve para atribuir um valor qualquer a uma variavel ja existente
+'=' - Recebe
+
+Relacionais - O resultado sempre será um valor boolean(True or False)
+'>' - Maior que
+'<' - Menor que
+'>=' - Maior ou igual que
+'<=' - Menor ou igual que
+'==' - Igual que
+'!=' - Diferente de
+
+Identidade
+5 == '5' - True
+5 === '5' - False (=== - Testa se os valores são idênticos, ou seja se tem o mesmo valor, se é string e number...)
+
+Lógicos
+'!' - negação. 
+'&&' - conjunção ou e. 
+'||' - disjunção ou ou. 
+
+Ternário
+'?,:' - Exemplo: média>=7.0? 'Aprovado' : 'Reprovado'.
+
+
+Ordem de precedência dos operadores
+1 é feito os Aritméticos
+'()'
+'**'
+'*' '/'  '%'
+'+' '-' 
+2 é feito os Relacionais porém os relacionais não possui ordem diferente dos aritméticos e dos lógicos
+'>' 
+'<' 
+'>=' 
+'<=' 
+'=='
+'!='
+3 é feito os operadores lógicos
+'!'
+'&&'
+'||'
+4 é feito os operadores ternários
+
+---------------------------------------------------------------------------------------------------------
+
+DOM (Document Object Model)
+
+DOM - É um conjunto de objetos dentro do navegador que da acesso aos componentes internos do website.
+
+Árvore DOM
+
+                                     Window(Tudo dentro do javascript esta aq)
+location(Diz a localização do site)        Document(Documento atual)        History(Guarda as informações, de onde vc veio, pra onde vc vai)
+
+
+Métodos pra navegar dentro dos elementos
+por Marca - getElementsByTagName() - Seleciona a tag como por exemplo uma div
+por Identidade - getElementById() - Seleciona o id de uma tag
+por Nome - getElementsByName() - Seleciona por nome
+por Classe - getElementsByClassName() - Seleciona por classe
+por Seletor -  querySelector() && querySelectorAll() - Seleciona a linha.
+
+
+innerText - pega o texto sem a formatação
+innerHtml - pega o texto com a formatação
+
+
+
