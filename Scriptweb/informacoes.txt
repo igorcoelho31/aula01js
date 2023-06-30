@@ -1,0 +1,2 @@
+WEB API FAKE - Usaremos o JSON como uma web fake api quando não possuirmos acesso a API
+NPM INIT - Gera o arquivo JSON
